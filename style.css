@@ -1,0 +1,59 @@
+:root{--color-white:#fff;--color-black:#000;--color-purple:#240046;--color-purple2:#7b2cbf;--color-purple3:#3c096c}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:"Montserrat",sans-serif;color:var(--color-black);background-color:var(--color-purple)}
+.img_logo_header{width:90px}
+.header,.navigation_header{display:flex;flex-direction:row;align-items:center}
+.header{background-color:var(--color-white);box-shadow:1px 1px 4px var(--color-purple2);height:100px;justify-content:space-between;padding:0 10%}
+.navigation_header{gap:3em;z-index:2}
+.navigation_header a{text-decoration:none;color:var(--color-white);transition:1s;font-weight:700}
+.active{background-color:var(--color-purple);padding:10px;border-radius:10px}
+.content{text-align:center;padding-top:50px;height:100vh;color:var(--color-white);transition:1s}
+.btn_icon_header{background-color:transparent;border:none;color:var(--color-purple);cursor:pointer;display:none}
+@media screen and (max-width: 768px) {
+.btn_icon_header{display:block}
+.navigation_header{position:absolute;flex-direction:column;top:0;background-color:var(--color-purple3);height:100%;width:35vw;padding:1em;animation-duration:1s;margin-left:-100vw}
+}
+@keyframes showSidebar {
+from{margin-left:-100vw}
+to{margin-left:-10vw}
+}
+#time{font-size:5rem;margin-bottom:.17rem}
+#date{font-size:1.25rem;margin-bottom:1.8rem}
+.container{width:100%;min-height:100vh;padding:5%}
+.container2{width:100%;min-height:100vh;padding:20px;background-color:var(--color-white);color:#000;display:flex;flex-direction:column}
+.container3{width:100%;min-height:100vh;padding:5%;background-color:var(--color-purple);color:#fff}
+.search-bar{width:100%;max-width:700px;background:rgba(255,255,255,0.2);border-radius:60px;padding:10px 20px}
+.search-bar input{background:transparent;flex:1;border:0;outline:none;padding:24px 20px;font-size:20px;color:#d7d5d5}
+::placeholder{color:var(--color-purple)}
+::-webkit-scrollbar{width:5px}
+::-webkit-scrollbar-track{background:var(--color-white)}
+::-webkit-scrollbar-thumb{background:#10002b}
+.search-bar button img{width:25px}
+.search-bar button{border:0;border-radius:50%;width:60px;margin-top:5px;float:right;height:60px;background:var(--color-purple3);cursor:pointer}
+.search-field,.search-submit{background:none;outline:none;border:none;line-height:2rem;position:relative;background-color:#fff;background-color:#1d3946;width:38.8%;font-family:"Montserrat",sans-serif;border-radius:1rem;border:2px solid #041b24;padding:.3rem}
+footer{background-color:#10002b;width:99.755vw;height:auto;font-family:"Montserrat",sans-serif;padding-top:40px;color:#fff;position:absolute}
+.footer-content{display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center}
+.footer-contet h3{font-size:1.8rem;font-weight:400;text-transform:capitalize;line-height:3rem}
+.footer-content p{max-width:500px;margin:10px auto;line-height:28px;font-size:14px}
+.socials{list-style:none;display:flex;align-items:center;justify-content:center;margin:1rem 0 3rem}
+.socials li{margin:0 10px}
+.socials a{text-decoration:none;color:#fff}
+.socials a i{font-size:1.1rem;transition:color .4s ease}
+.socialsa:hover i{color:aqua}
+.footer-bottom{background:#19053d;width:99.76vw;padding:20px 0;text-align:center}
+.footer-bottom p{font-size:14px;word-spacing:2px}
+.footer-bottom span{text-transform:uppercase;opacity:.4;font-weight:200}
+.image-container{margin-bottom:20px}
+.text-container2{text-align:center;font-size:22px}
+@media only screen and (min-width: 768px) {
+.container2{flex-direction:row;justify-content:space-around;align-items:center}
+.image-container{margin-bottom:0;margin-right:20px}
+}
+img{max-width:100%;height:auto}
+.containerbox{display:flex;flex-wrap:wrap;justify-content:center;align-items:center}
+.singlebox{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;width:250px;height:auto;border-radius:20px;background-color:var(--color-white);text-align:center;margin:20px;padding:20px;transition:.3s;color:var(--color-black);font-family:"Montserrat",sans-serif}
+.headertext{font-size:27px;font-weight:500;line-height:48px;color:var(--color-black);font-family:"Montserrat",sans-serif}
+.imgtext{padding-top:20px;color:#000}
+.imgtext p{font-size:15px;font-weight:400;line-height:30px}
+.singlebox:hover{color:#5a189a}

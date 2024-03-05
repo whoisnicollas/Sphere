@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="style.css">
+  <title>Sphere</title>
+</head>
+
+<body>
+  <div class="header" id="header">
+    <button onclick="toggleSidebar()" class="btn_icon_header">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list"
+        viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+          d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+      </svg>
+    </button>
+    <div class="logo_header">
+      <img src="/images/sphere.png" class="img_logo_header" alt="Logo Sphere">
+    </div>
+    <div class="navigation_header" id="navigation_header">
+      <button onclick="toggleSidebar()" class="btn_icon_header">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x"
+          viewBox="0 0 16 16">
+          <path
+            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+        </svg>
+      </button>
+      <a href="#time" class="active">Home</a>
+      <a href="#sobre" class="active">About us</a>
+    </div>
+  </div>
+  <div tabindex="0" class="content" onfocus="closeSidebar()" id="content">
+    <div id="time"></div>
+    <div id="date"></div>
+    <center>
+      <div class="container">
+        <form action="https://www.google.com/search" method="get" class="search-bar">
+          <input type="text" placeholder="Search on our Sphere..." name="q">
+          <button type="submit"> <img src="images/lupa.png"></button>
+        </form>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="containerbox">
+          <div class="singlebox">
+            <div class="img-text">
+              <span class="headertext"><strong>School</strong></span>
+              <p><br><a href="https://nsa.cps.sp.gov.br">NSA System</a></p>
+              <p><br><a href="https://www.office.com">Office 365</a></p>
+              <p><br><a href="https://vscode.dev">VSCode</a></p>
+              <p><br><a href="https://www.microsoft.com/rpsauth/v1/account/SignIn?ru=https%3A%2F%2Fwww.microsoft.com%2Fpt-br%2Fmicrosoft-teams%2Fgroup-chat-software">Teams</a></p>
+            </div>
+          </div>
+          
+          <div class="singlebox">
+            <div class="img-text">
+              <span class="headertext"><strong>Social Media</strong></span>
+              <p><br><a href="https://www.instagram.com">Instagram</a></p>
+              <p><br><a href="https://www.x.com">Twitter</a></p>
+              <p><br><a href="https://github.com">GitHub</a></p>
+              <p><br><a href="https://www.linkedin.com/feed/">LinkedIn</a></p>
+            </div>
+          </div>
+          
+          <div class="singlebox">
+            <div class="img-text">
+              <span class="headertext"><strong>Google</strong></span>
+              <p><br><a href="https://mail.google.com/mail/">Gmail</a></p>
+              <p><br><a href="https://drive.google.com/drive/">Drive</a></p>
+              <p><br><a href="https://docs.google.com/document/">Docs</a></p>
+              <p><br><a href="https://photos.google.com/">Photos</a></p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      
+      
+    </center>
+    <section id="sobre">
+    <div class="container2">
+      <div class="image-container">
+        <img src="images/Sphere2.png" alt="Logo Sphere">
+      </div>
+      <div class="text-container2">
+        <h1> About Sphere</h1>
+        <p><br>Sphere is an innovative company that <br>
+          is about to launch a revolutionary <br> platform positioned as a  <br>
+          central and integrated browser to <br> simplify the online experience.
+          The goal <br> of Sphere is to provide users with an <br> intuitive and efficient way to explore the <br> web by integrating powerful features <br>  into a single interface.</p>
+      </div>
+    </div>
+  </section>
+    <footer>
+      <div class="footer-content">
+        <h3>Sphere</h3>
+        <p>Unifying the Web into a single sphere.</p>
+          <ul class="socials">
+            <li><a href="https://www.instagram.com/nicollasx_/"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://github.com/whoisnicollas"><i class="fa fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/nicollasmonteiro/"><i class="fa fa-linkedin-square"></i></a></li>
+          </ul>
+      </div>
+      <div class="footer-bottom">
+        <p>Copyright &copy;2024 Sphere. Designed by <span>nic!</span></p>
+      </div>
+    </footer>
+</body>
+<script>
+  var header = document.getElementById('header');
+  var navigationHeader = document.getElementById('navigation_header');
+  var content = document.getElementById('content');
+  var showSidebar = false;
+
+  function toggleSidebar() {
+    showSidebar = !showSidebar;
+    if (showSidebar) {
+      navigationHeader.style.marginLeft = '-10vw';
+      navigationHeader.style.animationName = 'showSidebar';
+      content.style.filter = 'blur(2px)';
+    }
+    else {
+      navigationHeader.style.marginLeft = '-100vw';
+      navigationHeader.style.animationName = '';
+      content.style.filter = '';
+    }
+  }
+
+  function closeSidebar() {
+    if (showSidebar) {
+      toggleSidebar();
+    }
+  }
+
+  window.addEventListener('resize', function (event) {
+    if (window.innerWidth > 768 && showSidebar) {
+      toggleSidebar();
+    }
+  });
+
+  timeAndDate();
+
+  //this function finds the time and the date
+  function timeAndDate() {
+    var now = new Date(),
+      hours = now.getHours(),
+      ampm = hours <= 11 ? ' am' : ' pm',
+      minutes = now.getMinutes(),
+      months = now.getMonth(),
+      day = now.getDate(),
+      year = now.getFullYear();
+
+    var monthsArray = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+    if (hours > 12) {
+      amOrPM = "pm";
+    }
+    else if (hours == 24) {
+      amOrPM = "am";
+    }
+    else {
+      amOrPM = 'am';
+    }
+    if (hours > 12) {
+      hours -= 12;
+    }
+    else if (hours == 0) {
+      hours += 12;
+    }
+    else {
+    }
+
+    t_str = [hours,
+      (minutes < 10 ? "0" + minutes : minutes)]
+      .join(':') + ampm;
+    d_str = [monthsArray[months] + " " + day + ", " + year];
+    document.getElementById('time').innerHTML = t_str; //outputs the result to the time div
+    document.getElementById("date").innerHTML = d_str; //outputs the result to the date div
+
+    setTimeout(timeAndDate, 1000);
+  }
+</script>
+
+</html>
